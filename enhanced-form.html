@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Two Assignment</title>
+</head>
+<body>
+    <!-- Lists -->
+    <h1>Week Two Assignments</h1>
+    <h2>Ordered Lists</h2>
+    <ol>
+        <li>Web Development</li>
+        <li>Data Science</li>   
+        <li>Machine Learning</li>
+        <li>Artificial Intelligence</li>
+        <li>Cybersecurity</li>
+        <li>Cloud Computing</li>
+        <li>DevOps</li>
+    </ol>
+    <h2>Unordered Lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ul>
+    <h2>Definition Lists</h2>
+    <dl>
+        <dt>Python</dt>
+        <dd>A high-level programming language known for its readability and versatility.</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming language commonly used in web development to create interactive effects within web browsers.</dd>
+        <dt>HTML</dt>
+        <dd>The standard markup language for documents designed to be displayed in a web browser.</dd>
+        <dt>CSS</dt>
+        <dd>A style sheet language used for describing the presentation of a document written in HTML or XML.</dd>
+        <dt>Java</dt>
+        <dd>A high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</dd>
+        <dt>C++</dt>
+        <dd>A general-purpose programming language created as an extension of the C programming language, or "C with Classes".</dd>
+    </dl>
+    <h2>Tables</h2>
+    <table border="1"cellpadding="5">
+        <thead>
+            <tr>
+                <th>Programming Language</th>
+                <th>Type</th>
+                <th>Use Case</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>High-level</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Scripting</td>
+                <td>Web Development, Interactive Web Pages</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Object-oriented</td>
+                <td>Enterprise Applications, Android Development</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Compiled</td>
+                <td>System Software, Game Development</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Multimedia</h2>
+  <h2>Video media</h2>
+    <video width="320" height="240" controls>
+        <source src="video/webdesign.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>Audio media</h2>    
+    <audio controls>
+        <source src="audio/Aylex - Evolution (freetouse.com) (1).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <h1>Registration Form</h1>
+    <form action="#" method="POST" autocomplete="on">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Entere your fullname..." required><br><br>
+
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br><br>
+
+        <label for="dob">Date of Birth *</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+2547..." autocomplete="tel"><br><br>
+
+        <label for="gender">Gender *</label><br>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br><br>
+
+        <label for="country">Country *</label><br>
+        <select id="country" name="country" required>
+          <option value="">--Choose your country--</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+          <option value="rwanda">Rwanda</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="south-africa">South Africa</option>
+          <option value="other">Other</option>
+        </select><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username *</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password *</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirmpassword">Confirm Password *</label><br>
+        <input type="password" id="confirmpassword" name="confirmpassword" required minlength="6"><br><br>
+
+        <label for="role">User Role</label><br>
+        <input type="text" id="role" name="role" value="Standard User" readonly><br><br>
+      </fieldset>
+
+      <fieldset>
+        <label>Select your interests:</label><br>
+        <input type="checkbox" id="webdev" name="interests" value="webdev">
+        <label for="webdev">Web Development</label><br>
+        <input type="checkbox" id="datascience" name="interests" value="datascience">
+        <label for="datascience">Data Science</label><br>
+        <input type="checkbox" id="ml" name="interests" value="ml">
+        <label for="ml">Machine Learning</label><br>
+        <input type="checkbox" id="ai" name="interests" value="ai">
+        <label for="ai">Artificial Intelligence</label><br>
+        <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+        <label for="cybersecurity">Cybersecurity</label><br>
+        <input type="checkbox" id="cloud" name="interests" value="cloud">
+        <label for="cloud">Cloud Computing</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload and Comments</legend>
+
+        <label for="resume">Upload Resume (PDF only)</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+        <label for="comments">Additional Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your message here..."></textarea><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </form>
+    
+</body>
+</html>
